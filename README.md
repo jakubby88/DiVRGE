@@ -167,6 +167,14 @@ Split-read aligners differ in their sam formats. If not specified in the aligner
 ```
 
 ```
+<h2 align="center"> Output </h2><br>
+
+<h2 align="center"> What can you do with the output? </h2><br>
+
+- Calculate deletion richness<br>
+- Identify hotspots of deletion start/end coordinates<br>
+- Calculate relative frequency using coverage information<br>
+
 <h2 align="center"> Reference </h2><br>
 
 <p align="center">
@@ -180,11 +188,9 @@ Katherine E. E. Johnson (1), Alexandra A. Mushegian (2), Scott W. Long (3), Rand
 
 3. Laboratory of Molecular and Translational Human Infectious Diseases Research, Center for Infectious Diseases, Department of Pathology and Genomic Medicine, Houston Methodist Research Institute and Houston Methodist Hospital Houston, Texas, 77030 <br>
 
-<h2 align="center"> Output </h2><br>
-<h2 align="center"> What can you do with the output? </h2><br>
 <h2 align="center"> Contact </h2><br>
 
-<h2 align="center"> Bibliography </h2><br>
+<h2 align="center"> Links </h2><br>
 1. https://sourceforge.net/projects/bbmap/<br>
 2. https://github.com/alexdobin/STAR<br>
 3. https://samtools.github.io/hts-specs/SAMv1.pdf
