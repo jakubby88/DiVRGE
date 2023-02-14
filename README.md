@@ -35,7 +35,7 @@ python/intel/3.8.6
 Package       Version
 ------------- ---------
 biopython     1.81
-joblib        1.2.0### snakefile_divrge_group includes: DiVRGE (grouped samples)<br>
+joblib        1.2.0
 169
 
 numpy         1.21.5
