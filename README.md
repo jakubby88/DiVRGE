@@ -75,15 +75,15 @@ threadpoolctl 3.1.0
 
 <h2 align="center"> Adjusting config and running </h2><br>
 
-## snakefile_main_align (recommended): Align + SNV + DiVRGE (individual samples)<br>
+## snakefile_main_align (recommended): Align + SNV + DiVRGE <br>
 
-This workflow trims (trimmomatic) and aligns (BBmap and BWA) paired-end fastq data. BWA alignments are used as input into timo [5] to call single-nucleotide variants and BBmap is used to pull split-read information used for calling deletions with DiVRGE. This workflow will generate subdirectories in the defined working directory to organize and store all outputs.
+This workflow trims (trimmomatic) and aligns (BBmap and BWA) paired-end fastq data. BWA alignments are used as input into timo [5] to call single-nucleotide variants while BBmap alignment files are used to pull split-read information and call deletions with DiVRGE. This workflow will generate subdirectories in the defined working directory to organize and store all outputs.
 
 - Download config_align.yaml file
-- Adjust using your inputs (see below for details)
-- Do not rename
-- Works on paired-end seq. data (must adjust for single-end data)
-- run **snakefile_main_align**. Must include '--use-envmodules' flag. An example of a simple snakemake run with 2 cores:
+- Adjust the config file using your inputs (see below for details)
+- Do not rename the file!
+- This workflow works with paired-end seq. data (must adjust for single-end data)
+- run **snakefile_main_align**. Must include '--use-envmodules' flag. See below for an example of a simple snakemake run with 2 cores:
 
 ```
 >module load snakemake/6.12.3
@@ -143,13 +143,13 @@ mod_params: # modules to load
 ```
 
 ## snakefile_divrge_only includes: DiVRGE only (individual samples)<br>
-If you have already aligned your data using BBmap or similar split-read aligners, you can run DiVRGE specific rules with 'snakefile_divrge_only).
+If you have already aligned your data using BBmap or a similar split-read aligner, you can run DiVRGE specific rules with 'snakefile_divrge_only'.<br>
 
-- Download config_divrge.yaml file
-- Adjust using your inputs
-- Do not rename
-- Works on PREVIOUSLY ALIGNED data
-- run **snakefile_divrge_only** example: 
+- Download config_divrge.yaml file.
+- Adjust the config file using your inputs.
+- Do not rename the file!
+- This workflow works on PREVIOUSLY ALIGNED data.
+- run **snakefile_divrge_only**. See below for a simple example of a snakemake run using 2 cores. Must use the '--use-envmodules' flag: 
 
 ```
 >module load snakemake/6.12.3
