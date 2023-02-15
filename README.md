@@ -75,13 +75,15 @@ threadpoolctl 3.1.0
 
 <h2 align="center"> Adjusting config and running </h2><br>
 
-## snakefile_main_align (recommended) includes: Align + SNV + DiVRGE (individual samples)<br>
+## snakefile_main_align (recommended): Align + SNV + DiVRGE (individual samples)<br>
+
+This workflow trims (trimmomatic) and aligns (BBmap and BWA) paired-end fastq data. BWA alignments are used as input into timo [5] to call single-nucleotide variants and BBmap is used to pull split-read information used for calling deletions with DiVRGE. This workflow will generate subdirectories in the defined working directory to organize and store all outputs.
 
 - Download config_align.yaml file
 - Adjust using your inputs (see below for details)
 - Do not rename
 - Works on paired-end seq. data (must adjust for single-end data)
-- run **snakefile_main_align** example: 
+- run **snakefile_main_align**. Must include '--use-envmodules' flag. An example of a simple snakemake run with 2 cores:
 
 ```
 >module load snakemake/6.12.3
@@ -193,6 +195,6 @@ Katherine E. E. Johnson (1), Alexandra A. Mushegian (2), Scott W. Long (3), Rand
 <h2 align="center"> Links </h2><br>
 1. https://sourceforge.net/projects/bbmap/<br>
 2. https://github.com/alexdobin/STAR<br>
-3. https://samtools.github.io/hts-specs/SAMv1.pdf
+3. https://samtools.github.io/hts-specs/SAMv1.pdf<br>
 4. https://snakemake.github.io/<br>
 5. https://github.com/GhedinLab/timo/blob/main/timo.v3.py<br>
