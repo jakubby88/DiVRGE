@@ -177,6 +177,17 @@ Split-read aligners differ in their sam formats. If not specified in the aligner
 ```
 <h2 align="center"> Output </h2><br>
 
+If running the recommended **snakemake_main_align** pipeline: 
+- bamfiles: alignments
+- trimmed: trimmed fastqs
+- FILES/fullvarlist: the timo snplist outputs
+- metric: metric files
+- DVG: deletion files
+- 
+
+
+
+
 <h2 align="center"> What can you do with the output? </h2><br>
 
 - Calculate deletion richness<br>
