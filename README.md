@@ -34,16 +34,19 @@ python/intel/3.8.6
 ```
 Package       Version
 ------------- ---------
-biopython     1.81
-joblib        1.2.0
-169
-
-numpy         1.21.5
-pysam         0.20.0
-scikit-learn  1.2.1
-scipy         1.10.0
-sklearn       0.0.post1
-threadpoolctl 3.1.0
+biopython==1.81
+joblib==1.2.0
+numpy==1.21.5
+pandas==2.0.1
+pysam==0.20.0
+python-dateutil==2.8.2
+pytz==2023.3
+scikit-learn==1.2.1
+scipy==1.10.0
+six==1.16.0
+sklearn==0.0.post1
+threadpoolctl==3.1.0
+tzdata==2023.3
 ```
 ### Setting up virtual environment named 'divrge' and installing packages: 
 ```
@@ -56,16 +59,23 @@ threadpoolctl 3.1.0
 ### Check that necessary Python packages are installed in virtual env. using *pip list --local*:<br> 
 ```
 (divrge) [user ~]$ pip list --local
-Package       Version
-------------- ---------
-biopython     1.81
-joblib        1.2.0
-numpy         1.21.5
-pysam         0.20.0
-scikit-learn  1.2.1
-scipy         1.10.0
-sklearn       0.0.post1
-threadpoolctl 3.1.0
+Package         Version
+--------------- ---------
+biopython       1.81
+joblib          1.2.0
+numpy           1.21.5
+pandas          2.0.1
+pip             21.1.1
+pysam           0.20.0
+python-dateutil 2.8.2
+pytz            2023.3
+scikit-learn    1.2.1
+scipy           1.10.0
+setuptools      56.0.0
+six             1.16.0
+sklearn         0.0.post1
+threadpoolctl   3.1.0
+tzdata          2023.3
 ```
 
 ### Deactivate env when finished:<br>
