@@ -92,6 +92,7 @@ bwa index reference.fasta
 - run **snakefile_main_align**. Must include '--use-envmodules' flag. See below for an example of a simple snakemake run with 2 cores:
 
 ```
+>sinteractive --cpus-per-task=4 --mem=8GB
 >module load snakemake/6.12.3
 >snakemake -c2 --use-envmodules -s snakefile_main_align
 ```
@@ -180,10 +181,13 @@ Split-read aligners differ in their sam formats. If not specified in the aligner
 If running the recommended **snakemake_main_align** pipeline: 
 - bamfiles: alignments
 - trimmed: trimmed fastqs
-- FILES/fullvarlist: the timo snplist outputs
+- FILES/fullvarlist: the timo snplist outputs. Timo "snplist" files will contain nucleotide information across all positions in the genome (see GhedinLab/timo for more details).
 - metric: metric files
-- DVG: deletion files
-- 
+- DVG: deletion files. Each sample will have individual deletion csv files (labeled: "SAMPLE.DVG.STRAIN.FINAL.OneGap"). All samples that were aligned together will also be concatenated into one file named "STRAIN.DVG.FINAL.OneGap").
+- N_files: split read information used for DiVRGE
+
+
+
 
 
 
