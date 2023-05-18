@@ -83,6 +83,12 @@ This workflow trims (trimmomatic) and aligns (BBmap and BWA) paired-end fastq da
 - Adjust the config file using your inputs (see below for details)
 - Do not rename the file!
 - This workflow works with paired-end seq. data (must adjust for single-end data)
+- Make sure you have indexed your reference file using BWA before starting.
+
+```
+bwa index reference.fasta
+```
+
 - run **snakefile_main_align**. Must include '--use-envmodules' flag. See below for an example of a simple snakemake run with 2 cores:
 
 ```
