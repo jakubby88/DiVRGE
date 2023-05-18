@@ -32,8 +32,6 @@ python/intel/3.8.6
 
 ### DiVRGE Python3 packages (in requirements.txt):
 ```
-Package       Version
-------------- ---------
 biopython==1.81
 joblib==1.2.0
 numpy==1.21.5
