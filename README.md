@@ -189,12 +189,12 @@ Split-read aligners differ in their sam formats. If not specified in the aligner
 <h2 align="center"> Output </h2><br>
 
 If running the recommended **snakemake_main_align** pipeline: 
-- bamfiles: alignments
-- trimmed: trimmed fastqs
-- FILES/fullvarlist: the timo snplist outputs. Timo "snplist" files will contain nucleotide information across all positions in the genome (see GhedinLab/timo for more details).
+- **bamfiles**: alignments
+- **trimmed**: trimmed fastqs
+- **FILES/fullvarlist**: the timo snplist outputs. Timo "snplist" files will contain nucleotide information across all positions in the genome (see GhedinLab/timo for more details).
 - metric: metric files
-- DVG: deletion files. Each sample will have individual deletion csv files (labeled: "SAMPLE.DVG.STRAIN.FINAL.OneGap"). All samples that were aligned together will also be concatenated into one file named "STRAIN.DVG.FINAL.OneGap").
-- N_files: split read information used for DiVRGE
+- **DVG**: deletion files. Each sample will have individual deletion csv files (labeled: "SAMPLE.DVG.STRAIN.FINAL.OneGap"). All samples that were aligned together will also be concatenated into one file named "STRAIN.DVG.FINAL.OneGap").
+- **N_files**: split read information used for DiVRGE
 
 
 
