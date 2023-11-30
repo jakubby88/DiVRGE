@@ -1,0 +1,40 @@
+---
+params:
+  ref: "/data/SGSlab/kjohnson/reference/sars2/SARS-CoV2.fa"
+  reads: "/data/SGSlab/kjohnson/PACBIO/KBRIN0547/ALL/sequenceData/rawData/rawfiles/"
+  begin1: ""
+  ending1: "_ALL_R1.fastq.gz"
+  output: "/data/SGSlab/kjohnson/PACBIO/KBRIN0547/local_align/"
+  maxindel: "30000"
+  minindel: "5"
+  adapters: "/data/SGSlab/kjohnson/PACBIO/scripts/adaptersToTrim.fa"
+  strain: "SARS"
+  gigs: "4G"
+  gtf_dir: "/data/SGSlab/kjohnson/reference/sars2"
+  script_dir: "/data/SGSlab/kjohnson/PACBIO/scripts/"
+  venv_path: "/home/johnsonkate/divrge/bin/activate"
+
+timo_params:
+  segments: ['NC_045512.2']
+  freq_cutoff: "0.001"
+  cov_cutoff: "1"
+
+divrge_param:
+  mismatch: '2'
+  gap_size: '5'
+  align_length: '28'
+  group_size: '5'
+  ncores: "4"
+  ninput: "1"
+
+mod_params:
+  subread_mod: "subread/2.0.3"
+  samtools_mod: "samtools/1.14"
+  python_mod: "python/3.8"
+  trim_mod: "trimmomatic/0.39"
+  trim_jar: "$TRIMMOMATIC_JAR"
+  bbtools: "bbtools/38.96"
+  bbtools_path: "/usr/local/apps/bbtools/38.96/bbmap_src/"
+  bwa: "bwa/0.7.17"
+  picard_mod: "picard/2.27.3"
+  picard_jar: "$PICARD_JAR"
