@@ -208,18 +208,7 @@ If running the recommended **snakemake_main_align** pipeline:
 
 <h2 align="center"> Reference </h2><br>
 
-<p align="center">
-<em><strong>Optimized detection of deletions in virus genomes reveals unique within-host deletion dynamics in SARS-CoV-2 lineages</strong></em><br>
-Katherine E. E. Johnson (1), Alexandra A. Mushegian (2), Scott W. Long (3), Randall J. Olsen (3), Paul A. Christensen (3), Matthew Chung (2), James Musser (3), Elodie Ghedin (1,2)*
-</p>
 
-1. Center for Genomics and Systems Biology, Department of Biology, New York University, New York, NY, USA.<br>
-
-2. Systems Genomics Section, Laboratory of Parasitic Diseases, National Institute of Allergy and Infectious Disease, National Institutes of Health, Bethesda, MD, USA.<br>
-
-3. Laboratory of Molecular and Translational Human Infectious Diseases Research, Center for Infectious Diseases, Department of Pathology and Genomic Medicine, Houston Methodist Research Institute and Houston Methodist Hospital Houston, Texas, 77030 <br>
-
-<h2 align="center"> Contact </h2><br>
 
 <h2 align="center"> Links </h2><br>
 1. https://sourceforge.net/projects/bbmap/<br>
